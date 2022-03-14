@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Programare\Facultate\SEM2\TSC\Lab2\lab2
+T_opt1
+VEm0m>im79gaUM:AJVL9R;3
+Z1 04 19 4 work instr_register_test fast 0
+Z2 =1-e86a640e3d3f-622f2c2b-135-4638
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 n@_opt1
+Z5 OE;O;6.6d;45
+Z6 dD:\Programare\Facultate\SEM2\TSC\Lab2\lab2
+vinstr_register
+Z7 Mx1 6 sv_std 3 std
+Z8 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z9 Mx2 4 work 18 instr_register_pkg
+Z10 DXx4 work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
+Z11 Izlgh4QQ_5WV`>EDVk6A=21
+Z12 V3z9A3Eb_VM7O2iR_@`ig80
+S1
+R6
+Z13 w1647258259
+Z14 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab_dut/instr_register.sv
+Z15 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab_dut/instr_register.sv
+L0 9
+Z16 OE;L;6.6d;45
+r1
+31
+Z17 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z18 !s105 instr_register_sv_unit
+Z19 !s100 6^c4H@z>TICN;NJ=0DO5K2
+!s85 0
+Xinstr_register_pkg
+R7
+R8
+Z20 V:JTF@fFZEAY;_aRJ`=BP83
+r1
+31
+Z21 I:JTF@fFZEAY;_aRJ`=BP83
+S1
+R6
+Z22 w1647253198
+Z23 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab_dut/instr_register_pkg.sv
+Z24 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R16
+R17
+Z25 !s100 V^fH5UCOegY6PL:OBDSV^3
+!s85 0
+vinstr_register_test
+R7
+R8
+R9
+R10
+Z26 IX<Z[LZ`gV3n[@^Y5LPn=P1
+Z27 VEBCnBoI9@;K2I3Z?DhHY42
+S1
+R6
+Z28 w1647258653
+Z29 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/instr_register_test.sv
+Z30 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/instr_register_test.sv
+L0 8
+R16
+r1
+31
+R17
+Z31 !s105 instr_register_test_sv_unit
+Z32 !s100 @H[ofdik0bEN;0YH:nFBa1
+!s85 0
+Ytb_ifc
+R7
+R8
+R9
+R10
+Z33 IRXG@<h?jjSY?Qj]FX1S^M3
+Z34 V[2MM;6bj4cE27ld353ZQ90
+S1
+R6
+Z35 w1647257538
+Z36 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/tb_ifc.sv
+Z37 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R16
+r1
+31
+R17
+Z38 !s100 FgL`9aeHBa3jgVb01S]<a0
+Z39 !s105 tb_ifc_sv_unit
+!s85 0
+vtop
+R7
+R8
+R9
+R10
+Z40 I8K^Pi213RJ<d?MlZcEn4f1
+Z41 Ve:gFW1CKLAXc^T:7k2HoD1
+S1
+R6
+Z42 w1647258551
+Z43 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/top.sv
+Z44 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/top.sv
+L0 5
+R16
+r1
+31
+R17
+Z45 !s105 top_sv_unit
+Z46 !s100 Oa3J5O6@0nj4PPXATlcOB3
+!s85 0

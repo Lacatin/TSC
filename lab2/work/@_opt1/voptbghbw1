@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Programare\Facultate\SEM2\TSC\Lab2\lab2
+T_opt1
+Z1 VEm0m>im79gaUM:AJVL9R;3
+Z2 04 19 4 work instr_register_test fast 0
+Z3 =1-e86a640e3d3f-622f2c2b-135-4638
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt1
+Z6 OE;O;6.6d;45
+Z7 dD:\Programare\Facultate\SEM2\TSC\Lab2\lab2
+vinstr_register
+Z8 Mx1 6 sv_std 3 std
+Z9 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z10 Mx2 4 work 18 instr_register_pkg
+Z11 DXx4 work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
+Z12 Izlgh4QQ_5WV`>EDVk6A=21
+Z13 V3z9A3Eb_VM7O2iR_@`ig80
+S1
+R7
+Z14 w1647258259
+Z15 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab_dut/instr_register.sv
+Z16 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab_dut/instr_register.sv
+L0 9
+Z17 OE;L;6.6d;45
+r1
+31
+Z18 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z19 !s105 instr_register_sv_unit
+Z20 !s100 6^c4H@z>TICN;NJ=0DO5K2
+!s85 0
+Xinstr_register_pkg
+Z21 Mx1 24 C:\modeltech_6.6d\sv_std 3 std
+Z22 DXx24 C:\modeltech_6.6d\sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z23 I:JTF@fFZEAY;_aRJ`=BP83
+Z24 V:JTF@fFZEAY;_aRJ`=BP83
+S1
+R7
+Z25 w1647253198
+Z26 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab_dut/instr_register_pkg.sv
+Z27 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R17
+r1
+31
+R18
+Z28 !s100 V^fH5UCOegY6PL:OBDSV^3
+!s85 0
+vinstr_register_test
+R21
+R22
+Z29 Mx2 47 D:\Programare\Facultate\SEM2\TSC\Lab2\lab2\work 18 instr_register_pkg
+Z30 DXx47 D:\Programare\Facultate\SEM2\TSC\Lab2\lab2\work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
+Z31 IX<Z[LZ`gV3n[@^Y5LPn=P1
+Z32 VEBCnBoI9@;K2I3Z?DhHY42
+Z33 !s105 instr_register_test_sv_unit
+S1
+R7
+Z34 w1647258653
+Z35 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/instr_register_test.sv
+Z36 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/instr_register_test.sv
+L0 8
+R17
+r1
+31
+R18
+Z37 !s100 @H[ofdik0bEN;0YH:nFBa1
+!s85 0
+Ytb_ifc
+R21
+R22
+R29
+R30
+Z38 IRXG@<h?jjSY?Qj]FX1S^M3
+Z39 V[2MM;6bj4cE27ld353ZQ90
+S1
+R7
+Z40 w1647257538
+Z41 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/tb_ifc.sv
+Z42 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R17
+r1
+31
+R18
+Z43 !s100 FgL`9aeHBa3jgVb01S]<a0
+Z44 !s105 tb_ifc_sv_unit
+!s85 0
+vtop
+R8
+R9
+R10
+R11
+Z45 I8K^Pi213RJ<d?MlZcEn4f1
+Z46 Ve:gFW1CKLAXc^T:7k2HoD1
+S1
+R7
+Z47 w1647258551
+Z48 8D:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/top.sv
+Z49 FD:/Programare/Facultate/SEM2/TSC/Lab2/lab2/lab01_testbench-interface/top.sv
+L0 5
+R17
+r1
+31
+R18
+Z50 !s105 top_sv_unit
+Z51 !s100 Oa3J5O6@0nj4PPXATlcOB3
+!s85 0
