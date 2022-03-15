@@ -25,7 +25,7 @@ module top;
   // instantiate testbench and connect ports
   instr_register_test test (
     // .clk(test_clk),
-    lab2_ifc
+    .lab2_ifc(lab2_ifc)
    );
 
   // instantiate design and connect ports
