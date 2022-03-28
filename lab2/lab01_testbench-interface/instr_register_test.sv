@@ -14,6 +14,7 @@ module instr_register_test
   //timeunit 1ns/1ns;
 
   int seed = 555;
+  int k = 0;
 
   initial begin
     $display("\n\n***********************************************************");
@@ -21,6 +22,7 @@ module instr_register_test
     $display(    "***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***");
     $display(    "***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***");
     $display(    "***********************************************************");
+    $display("FIRST HEADER");
 
     $display("\nReseting the instruction register...");
     lab2_ifc.cb.write_pointer  <= 5'h00;         // initialize write pointer
@@ -32,7 +34,7 @@ module instr_register_test
 
     $display("\nWriting values to register stack...");
     @(posedge lab2_ifc.cb) lab2_ifc.cb.load_en <= 1'b1;  // enable writing to register
-    repeat (3) begin
+    repeat (5) begin
       @(posedge lab2_ifc.cb) randomize_transaction;
       @(negedge lab2_ifc.cb) print_transaction;
     end
@@ -40,11 +42,12 @@ module instr_register_test
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
-    for (int i=0; i<=2; i++) begin
+    for (int i=4; i>=0; i--) begin
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
-      @(posedge lab2_ifc.cb) lab2_ifc.cb.read_pointer <= i;
+      k = $unsigned($random)%5;
+      @(posedge lab2_ifc.cb) lab2_ifc.cb.read_pointer <= k;
       @(negedge lab2_ifc.cb) print_results;
     end
 
