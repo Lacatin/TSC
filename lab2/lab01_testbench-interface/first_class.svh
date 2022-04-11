@@ -1,7 +1,8 @@
 class first_class;
 
-  int seed = 555;
+  //int seed = 7777;
   int k = 0;
+  parameter NUMBER_OF_TRANSACTIONS = 100; // parametrul ramane fix la compilare
   virtual tb_ifc.TEST lab2_ifc;
 
     function new( virtual tb_ifc ifc);
@@ -27,7 +28,7 @@ class first_class;
 
     $display("\nWriting values to register stack...");
     @(posedge lab2_ifc.cb) lab2_ifc.cb.load_en <= 1'b1;  // enable writing to register
-    repeat (5) begin
+    repeat (NUMBER_OF_TRANSACTIONS) begin
       @(posedge lab2_ifc.cb) randomize_transaction;
       @(negedge lab2_ifc.cb) print_transaction;
     end
@@ -35,7 +36,7 @@ class first_class;
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
-    for (int i=4; i>=0; i--) begin
+    for (int i=NUMBER_OF_TRANSACTIONS; i>=0; i--) begin
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
@@ -63,9 +64,9 @@ class first_class;
     // write_pointer values in a later lab
     //
     static int temp = 0;
-    lab2_ifc.cb.operand_a     <= $random(seed)%16;                 // between -15 and 15
-    lab2_ifc.cb.operand_b     <= $unsigned($random)%16;            // between 0 and 15
-    lab2_ifc.cb.opcode        <= opcode_t'($unsigned($random)%8);  // between 0 and 7, cast to opcode_t type
+    lab2_ifc.cb.operand_a     <= $urandom%16;                 // between -15 and 15 // random genereaza valori random pe 32 de biti
+    lab2_ifc.cb.operand_b     <= $unsigned($urandom)%16;            // between 0 and 15
+    lab2_ifc.cb.opcode        <= opcode_t'($unsigned($urandom)%8);  // between 0 and 7, cast to opcode_t type
     lab2_ifc.cb.write_pointer <= temp++;
   endfunction: randomize_transaction
 
@@ -75,6 +76,8 @@ class first_class;
     $display("  operand_a <= %0d",   lab2_ifc.cb.operand_a);
     $display("  operand_b <= %0d\n", lab2_ifc.cb.operand_b);
   endfunction: print_transaction
+
+//functie de check_results daca se trec rezulatele print pass/failed
 
   function void print_results;
     $display("Read from register location %0d: ", lab2_ifc.cb.read_pointer);
