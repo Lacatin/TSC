@@ -5,14 +5,12 @@ call build.bat
 ::========================================================================================
 cd ../sim
 
-call run_test.bat 22375 4
-call run_test.bat 88888 8
-call run_test.bat 99999 3
-call run_test.bat 52887 2
-call run_test.bat 44444 14
-call run_test.bat 74130 27
-call run_test.bat 12876 3
-call run_test.bat 99555 16
-call run_test.bat 66777 46
-call run_test.bat 22555 75
-
+call run_test_c.bat 1111;
+call run_test_c.bat 2222;
+call run_test_c.bat 3333;
+call run_test_c.bat 4444;
+call run_test_c.bat 5555;
+call run_test_c.bat 6666;
+call run_test_c.bat 7777;
+call run_test_c.bat 8888;
+call run_test_c.bat 9999;

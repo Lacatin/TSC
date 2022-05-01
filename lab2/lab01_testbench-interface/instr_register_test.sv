@@ -5,21 +5,29 @@
  * a scoreboard for self-verification.
  **********************************************************************/
 
-import instr_register_pkg::*;
-`include "first_test.sv"
+//---------NOTITE---------
+
+//task-ul consuma timp de simulare , functia nu. Task-ul nu returneaza nimic.
+
+//---------NOTITE SFARSIT---------
+
+  import instr_register_pkg::*;  // user-defined types are defined in instr_register_pkg.sv
+  `include "first_class.svh"
 
 module instr_register_test
-  import instr_register_pkg::*;  // user-defined types are defined in instr_register_pkg.sv
   (
     tb_ifc.TEST lab2_ifc
   );
 
-  initial begin
-    first_test ft;
-    ft = new(lab2_ifc);
+  //timeunit 1ns/1ns;
 
-    // Run
-    ft.init_sim();
+
+  initial begin
+
+    first_class fs;
+    fs=new(lab2_ifc);
+    fs.run();
+
   end
 
 endmodule: instr_register_test
