@@ -1,0 +1,137 @@
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling interface tb_ifc
+# -- Compiling package instr_register_test_sv_unit
+# -- Importing package instr_register_pkg
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +nowarnTSCALE +NR_OF_TRANS=5 -coverage -sva -quiet -sv_seed 555 -novopt top 
+# Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.instr_register_pkg
+# Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.top
+# Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.tb_ifc
+# Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.instr_register_test_sv_unit
+# Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.instr_register_test
+# Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.instr_register
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(21): Clocking block output #parent#.lab2_ifc.cb.opcode is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(12): Clocking block output #parent#.lab2_ifc.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(17): Clocking block output #parent#.lab2_ifc.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(21): Clocking block output #parent#.lab2_ifc.cb.opcode is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(12): Clocking block output #parent#.lab2_ifc.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(17): Clocking block output #parent#.lab2_ifc.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(110): Clocking block output lab2_ifc.cb.opcode is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(111): Clocking block output lab2_ifc.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(112): Clocking block output lab2_ifc.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(109): Clocking block output lab2_ifc.cb.write_pointer is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/first_test.sv(116): Clocking block output lab2_ifc.cb.read_pointer is not legal in this
+# or another expression.
+#         Region: /instr_register_test_sv_unit
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# Writing to register location 0: 
+#   opcode = 6 (DIV)
+#   operand_a = -14
+#   operand_b = 2
+# 
+# Writing to register location 1: 
+#   opcode = 1 (PASSA)
+#   operand_a = 15
+#   operand_b = 14
+# 
+# Writing to register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = 6
+#   operand_b = 12
+# 
+# Writing to register location 3: 
+#   opcode = 3 (ADD)
+#   operand_a = 14
+#   operand_b = 9
+# 
+# Writing to register location 4: 
+#   opcode = 1 (PASSA)
+#   operand_a = -9
+#   operand_b = 15
+# 
+# 
+# Reading back the same register locations written...
+# Read from register location 0: 
+#   opcode = 6 (DIV)
+#   operand_a = -14
+#   operand_b = 2
+#   result    = -7
+# 
+# Read from register location 1: 
+#   opcode = 1 (PASSA)
+#   operand_a = 15
+#   operand_b = 14
+#   result    = 15
+# 
+# Read from register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = 6
+#   operand_b = 12
+#   result    = 72
+# 
+# Read from register location 3: 
+#   opcode = 3 (ADD)
+#   operand_a = 14
+#   operand_b = 9
+#   result    = 23
+# 
+# Read from register location 4: 
+#   opcode = 1 (PASSA)
+#   operand_a = -9
+#   operand_b = 15
+#   result    = -9
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# TEST PASSED
+# ** Note: $finish    : ../lab01_testbench-interface/first_test.sv(90)
+#    Time: 120 ns  Iteration: 2  Instance: /top/test
+# 1
+# Break in Task init_sim at ../lab01_testbench-interface/first_test.sv line 90
+# Simulation Breakpoint: 1
+# Break in Task init_sim at ../lab01_testbench-interface/first_test.sv line 90
+# MACRO ./run.do PAUSED at line 46
