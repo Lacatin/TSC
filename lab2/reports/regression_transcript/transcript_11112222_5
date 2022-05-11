@@ -11,7 +11,7 @@
 # 
 # Top level modules:
 # 	top
-# vsim +notimingchecks +nowarnTSCALE +NR_OF_TRANS=5 -coverage -sva -quiet -sv_seed 555 -novopt top 
+# vsim +notimingchecks +nowarnTSCALE +NR_OF_TRANS=5 -coverage -sva -quiet -sv_seed 11112222 -novopt top 
 # Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.instr_register_pkg
 # Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.top
 # Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.tb_ifc
@@ -65,60 +65,60 @@
 # Writing values to register stack...
 # Writing to register location 0: 
 #   opcode = 6 (DIV)
-#   operand_a = -14
-#   operand_b = 2
+#   operand_a = 14
+#   operand_b = 10
 # 
 # Writing to register location 1: 
-#   opcode = 1 (PASSA)
-#   operand_a = 15
-#   operand_b = 14
+#   opcode = 4 (SUB)
+#   operand_a = -7
+#   operand_b = 13
 # 
 # Writing to register location 2: 
-#   opcode = 5 (MULT)
-#   operand_a = 6
-#   operand_b = 12
+#   opcode = 4 (SUB)
+#   operand_a = 12
+#   operand_b = 7
 # 
 # Writing to register location 3: 
-#   opcode = 3 (ADD)
-#   operand_a = 14
-#   operand_b = 9
+#   opcode = 6 (DIV)
+#   operand_a = -3
+#   operand_b = 0
 # 
 # Writing to register location 4: 
-#   opcode = 1 (PASSA)
-#   operand_a = -9
-#   operand_b = 15
+#   opcode = 2 (PASSB)
+#   operand_a = 9
+#   operand_b = 7
 # 
 # 
 # Reading back the same register locations written...
 # Read from register location 0: 
 #   opcode = 6 (DIV)
-#   operand_a = -14
-#   operand_b = 2
-#   result    = -7
+#   operand_a = 14
+#   operand_b = 10
+#   result    = 1
 # 
 # Read from register location 1: 
-#   opcode = 1 (PASSA)
-#   operand_a = 15
-#   operand_b = 14
-#   result    = 15
+#   opcode = 4 (SUB)
+#   operand_a = -7
+#   operand_b = 13
+#   result    = -20
 # 
 # Read from register location 2: 
-#   opcode = 5 (MULT)
-#   operand_a = 6
-#   operand_b = 12
-#   result    = 72
+#   opcode = 4 (SUB)
+#   operand_a = 12
+#   operand_b = 7
+#   result    = 5
 # 
 # Read from register location 3: 
-#   opcode = 3 (ADD)
-#   operand_a = 14
-#   operand_b = 9
-#   result    = 23
+#   opcode = 6 (DIV)
+#   operand_a = -3
+#   operand_b = 0
+#   result    = x
 # 
 # Read from register location 4: 
-#   opcode = 1 (PASSA)
-#   operand_a = -9
-#   operand_b = 15
-#   result    = -9
+#   opcode = 2 (PASSB)
+#   operand_a = 9
+#   operand_b = 7
+#   result    = 7
 # 
 # 
 # ***********************************************************

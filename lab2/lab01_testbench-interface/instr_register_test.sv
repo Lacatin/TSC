@@ -12,7 +12,7 @@
 //---------NOTITE SFARSIT---------
 
   import instr_register_pkg::*;  // user-defined types are defined in instr_register_pkg.sv
-  `include "first_class.svh"
+  `include "first_test.sv"
 
 module instr_register_test
   (
@@ -24,9 +24,9 @@ module instr_register_test
 
   initial begin
 
-    first_class fs;
+    first_test fs;
     fs=new(lab2_ifc);
-    fs.run();
+    fs.init_sim();
 
   end
 
