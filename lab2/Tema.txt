@@ -1,3 +1,0 @@
-In structura instruction_t, adaugati un semnal de result. Tipul semnalului il definim noi.
-In print_results o sa ii facem $display.
-In DUT trebuie sa declaram un case si in functie de operatie calculam rezultatul.
