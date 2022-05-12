@@ -11,7 +11,7 @@
 # 
 # Top level modules:
 # 	top
-# vsim +notimingchecks +nowarnTSCALE +NR_OF_TRANS=5 -coverage -sva -quiet -sv_seed 11112222 -novopt top 
+# vsim +notimingchecks +nowarnTSCALE +NR_OF_TRANS=10 -coverage -sva -quiet -sv_seed 123454321 -novopt top 
 # Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.instr_register_pkg
 # Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.top
 # Refreshing D:\Programare\Facultate\SEM2\TSC\git repo\TSC\lab2\sim\work.tb_ifc
@@ -64,61 +64,116 @@
 # 
 # Writing values to register stack...
 # Writing to register location 0: 
-#   opcode = 6 (DIV)
-#   operand_a = 14
+#   opcode = 5 (MULT)
+#   operand_a = -1
 #   operand_b = 10
 # 
 # Writing to register location 1: 
-#   opcode = 4 (SUB)
-#   operand_a = -7
-#   operand_b = 13
+#   opcode = 1 (PASSA)
+#   operand_a = 8
+#   operand_b = 3
 # 
 # Writing to register location 2: 
-#   opcode = 4 (SUB)
-#   operand_a = 12
-#   operand_b = 7
+#   opcode = 0 (ZERO)
+#   operand_a = -15
+#   operand_b = 5
 # 
 # Writing to register location 3: 
 #   opcode = 6 (DIV)
-#   operand_a = -3
-#   operand_b = 0
+#   operand_a = -1
+#   operand_b = 6
 # 
 # Writing to register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = 5
+#   operand_b = 2
+# 
+# Writing to register location 5: 
+#   opcode = 7 (MOD)
+#   operand_a = 8
+#   operand_b = 0
+# 
+# Writing to register location 6: 
 #   opcode = 2 (PASSB)
-#   operand_a = 9
-#   operand_b = 7
+#   operand_a = 15
+#   operand_b = 15
+# 
+# Writing to register location 7: 
+#   opcode = 0 (ZERO)
+#   operand_a = 4
+#   operand_b = 3
+# 
+# Writing to register location 8: 
+#   opcode = 6 (DIV)
+#   operand_a = 2
+#   operand_b = 0
+# 
+# Writing to register location 9: 
+#   opcode = 6 (DIV)
+#   operand_a = 5
+#   operand_b = 4
 # 
 # 
 # Reading back the same register locations written...
 # Read from register location 0: 
-#   opcode = 6 (DIV)
-#   operand_a = 14
+#   opcode = 5 (MULT)
+#   operand_a = -1
 #   operand_b = 10
-#   result    = 1
+#   result    = -10
 # 
 # Read from register location 1: 
-#   opcode = 4 (SUB)
-#   operand_a = -7
-#   operand_b = 13
-#   result    = -20
+#   opcode = 1 (PASSA)
+#   operand_a = 8
+#   operand_b = 3
+#   result    = 8
 # 
 # Read from register location 2: 
-#   opcode = 4 (SUB)
-#   operand_a = 12
-#   operand_b = 7
-#   result    = 5
+#   opcode = 0 (ZERO)
+#   operand_a = -15
+#   operand_b = 5
+#   result    = 0
 # 
 # Read from register location 3: 
 #   opcode = 6 (DIV)
-#   operand_a = -3
+#   operand_a = -1
+#   operand_b = 6
+#   result    = 0
+# 
+# Read from register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = 5
+#   operand_b = 2
+#   result    = 10
+# 
+# Read from register location 5: 
+#   opcode = 7 (MOD)
+#   operand_a = 8
 #   operand_b = 0
 #   result    = x
 # 
-# Read from register location 4: 
+# Read from register location 6: 
 #   opcode = 2 (PASSB)
-#   operand_a = 9
-#   operand_b = 7
-#   result    = 7
+#   operand_a = 15
+#   operand_b = 15
+#   result    = 15
+# 
+# Read from register location 7: 
+#   opcode = 0 (ZERO)
+#   operand_a = 4
+#   operand_b = 3
+#   result    = 0
+# 
+# Read from register location 8: 
+#   opcode = 6 (DIV)
+#   operand_a = 2
+#   operand_b = 0
+#   result    = x
+# 
+# Read from register location 9: 
+#   opcode = 6 (DIV)
+#   operand_a = 5
+#   operand_b = 4
+#   result    = 1
 # 
 # 
 # ***********************************************************
@@ -129,7 +184,7 @@
 # 
 # TEST PASSED
 # ** Note: $finish    : ../lab01_testbench-interface/first_test.sv(90)
-#    Time: 120 ns  Iteration: 2  Instance: /top/test
+#    Time: 220 ns  Iteration: 2  Instance: /top/test
 # 1
 # Break in Task init_sim at ../lab01_testbench-interface/first_test.sv line 90
 # Simulation Breakpoint: 1
